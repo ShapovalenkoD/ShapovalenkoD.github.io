@@ -13,7 +13,7 @@ function giveMeResult(){
   if (k > 0 && k < 1) {
     j = Math.log(0.01) / Math.log(k);
   }
-  if (isNaN(m) || isNaN(n) || isNaN(c) || isNaN(x) || k < 0 || k >= 1 || m == "" || n == "" || c == "" || n < m) {
+  if (isNaN(m) || isNaN(n) || isNaN(c) || isNaN(x) || k < 0 || k >= 1 || m == "" || n == "" || c == "" || n > m) {
   document.getElementById("result").textContent = "Введите корректные данные";
   } else {
   document.getElementById("result").textContent =  Math.ceil(Math.ceil(n * j) * c / m);
