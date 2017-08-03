@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS test</title>
+</head>
+<body onload="initElement()";>
+  <h1>Сбой оборудования</h1>
+  <form id='forma'>
+    <div class="form-wrap"><input type="text" id="one" placeholder="m"></input><p> - количество часов на выполнения задания</p></div>
+    <div class="form-wrap"><input type="text" id="two" placeholder="n, n < m"></input><p> - количество часов на конвертирования в нужный формат</p></div>
+    <div class="form-wrap"><input type="text" id="three" placeholder="c"></input><p> - количество форматов</p></div>
+    <div class="form-wrap"><input type="text" id="four" placeholder="x %  (0 - 100)"></input><p> - вероятность ошибки или сбоя</p></div>
+    <div class="form-wrap"><div id="result">Результат</div><p>- количество серверов нужное для конвертации</p></div>
+  </form>
+  <button id="button">Посчитать</button>
+  <div class="text">Задача должна быть реализована на языке JavaScript. Представьте, что компания
+предоставляет сервис по доставке видео контента на мобильные устройства в
+различных форматах. По условиям контракта с поставщиками видео должно быть
+доступно клиентам не позднее чем через m часов, после того как Ваша компания
+получает мастер-копию. Конвертирование мастер-копии в нужный формат занимает n
+часов, где n < m. Вероятность ошибки или отказа оборудования - x%. Конвертирование
+занимает все ресурсы выделенного для этого сервера. Серверов может быть сколь
+угодно много. Количество форматов обозначается буквой с. Необходимо составить
+программу, которая принимала бы на вход m, n, x, c и выдавала бы минимальное
+количество серверов, необходимое чтобы для каждого формата вероятность после m
+часов не получить результат была бы 1% или менее.</div>
+  <link rel="stylesheet" href="style.css">
+  <script src="common.js"></script>
+</body>
+</html>

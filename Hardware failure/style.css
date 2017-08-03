@@ -1,0 +1,71 @@
+input {
+  margin: 5px 0;
+  height: 15px;
+  width: 130px;
+}
+
+#result {
+  font-size: 15px;
+  background-color: #EEEECC;
+  border-radius: 5px;
+  width: 134px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  height: 40px;
+  text-align: center;
+}
+
+.form-wrap {
+  display: flex;
+  align-items:  center;
+}
+
+#button {
+  font-size: 18px;
+  background-color: rgba(87, 172, 77, 0.9);
+  border: none; 
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  padding: 10px;
+  text-decoration: none;
+  user-select: none;
+  padding: .2em 1.2em;
+  outline: none;
+  border: 1px solid rgba(87, 172, 77, 0.9);
+  border-radius: 2px;
+  background: rgba(87, 172, 77, 0.9);
+  transition: all .318s ease 0s;
+}
+
+#button:hover {
+  background-color: rgba(87, 172, 77, 1);
+  cursor: pointer;
+  box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  border: 1px solid rgb(198,198,198);
+} 
+
+#button:active {
+  border: 1px solid rgb(204,204,204);
+  background: rgb(238,238,238);
+  box-shadow: 0 1px 2px rgba(0,0,0,.1) inset;
+}
+
+#button:focus {
+    outline: none;
+}
+
+p {
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.text {
+  width: 550px;
+  margin: 20px 0 0 0;
+}
+
