@@ -30,317 +30,22 @@
 </head>
 
 <body>
-
-	<div id="my-page">
-		
-		<section id="s-header">
-      
+  <div id="my-page">
+    <section id="s-body">
       <div class="container">
         <div class="row">
-          
+
           <div class="button-panel col-12 col-md-4 col-lg-3">
             <button id="btn-start-game" class="btn btn-primary">Начать игру</button>
             <button id="btn-next-move" class="btn btn-primary">Следующий ход</button>
-            <button id="btn-regulations" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Правила игры
+            <button id="btn-regulations" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                Правила игры
             </button>
-
-            <div class="collapse" id="collapseExample">
-          
-              <div class="wrap-regulations">
-                <h2>Цель игры:</h2><p> убать все цифры с поля.</p>
-                <h2>Правила игры:</h2><p>цифры убираются с поля парами если они дают в сумме 10 либо они одинаковые 
-                (как пример: 1 1; 2 2; и т.д). Убрать можно рядом стоящие цифры по горизонтале и вертикали 
-                и последнию цифру из ряда с первой цифрой в следующем ряду. 
-                Визуальный примеры как можно убирать цифры:</p>
-
-                <h4>Убираем последнию цифру в ряде с первой цифрой в следующем ряду</h4>
-                <div class="playing-field">
-                  <div class="gaming-row">
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage example">9</div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage example">1</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">1</div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">9</div>
-                  </div>
-                </div>
-
-                <h4>Убираем цифру по вертикали</h4>
-                <div class="playing-field">
-                  <div class="gaming-row">
-                    <div class="gaming-cage example">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage">9</div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage example">1</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage example">1</div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage example">9</div>
-                  </div>
-                </div>
-
-                <h4>убираем цифры по горизонтале</h4>
-                <div class="playing-field">
-                  <div class="gaming-row">
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage">9</div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage example">1</div>
-                    <div class="gaming-cage example">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">1</div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">9</div>
-                  </div>
-                </div>
-                <hr>
-                <p>Когда цифры убраны после них остаются пустые поля, они не учитываются при дальнейшем подсчёте позиций.</p>
-                <h4>Пример: в данном случае можно убарть из первого ряда 8 и со второго ряда 2</h4>
-                <div class="playing-field">
-                  <div class="gaming-row">
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage example">8</div>
-                    <div class="gaming-cage example-null"></div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example">2</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">1</div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">9</div>
-                  </div>
-                </div>
-                <h4>Результат:</h4>
-                <div class="playing-field">
-                  <div class="gaming-row">
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">1</div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">9</div>
-                  </div>
-                </div>
-                <hr>
-                <p>Если в ряде не остается цифр он убирается, колонки по вертикали не
-                 убираются, поле всегда имеет размерность 9 x N</p>
-                <hr>
-                <p>Кнопка: "следующий ход" добавляет к игровому полю все оставшееся цифры на поле без пустых клеток.</p>
-                <h5>Пример: после первого раунда у нас имеется следующие игровое поле</h5>
-                <div class="playing-field">
-                  <div class="gaming-row">
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage example-null"></div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">8</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage example-null"></div>
-                  </div>
-                </div>
-                 <p>После нажатия кнопки, получаем следующие игровое поле</p>
-                <div class="playing-field">
-                  <div class="gaming-row">
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">2</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage">5</div>
-                    <div class="gaming-cage">6</div>
-                    <div class="gaming-cage">7</div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                  </div>
-                  <div class="gaming-row">
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage example-null"></div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">3</div>
-                    <div class="gaming-cage">1</div>
-                    <div class="gaming-cage">4</div>
-                    <div class="gaming-cage example-null"></div>
-                  </div>
-                  <div class="gaming-row">
-                      <div class="gaming-cage">5</div>
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage">6</div>
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage">7</div>
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage">8</div>
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage example-null"></div>
-                  </div>
-                  <div class="gaming-row">
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage">2</div>
-                      <div class="gaming-cage">3</div>
-                      <div class="gaming-cage">4</div>
-                      <div class="gaming-cage">5</div>
-                      <div class="gaming-cage">6</div>
-                      <div class="gaming-cage">7</div>
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage">3</div>
-                    </div>
-                    <div class="gaming-row">
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage">4</div>
-                      <div class="gaming-cage">5</div>
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage">6</div>
-                      <div class="gaming-cage">1</div>
-                      <div class="gaming-cage">7</div>
-                      <div class="gaming-cage">8</div>
-                      <div class="gaming-cage">1</div>
-                    </div>                 
-                </div>
-              </div>
-            </div>
+            <h4>Сложность игры:</h4>
+            <button id="btn-easy-difficulty" class="btn btn-primary">Легко</button>
+            <button id="btn-hard-difficulty" class="btn btn-primary">Сложно</button>
+            <span>При смене сложности, игра начинается заново.</span>
           </div>
-
 
           <div class="gaming-panel col-12 col-md-8 col-lg-9">
             <div class="container">
@@ -353,37 +58,312 @@
               <div class="col-wrap">
                 <h2>Информация</h2>
                 <div id="infoGame">
+                  <div class="difficultyOfTheGame">Сложность игры: <p>легко</p></div>
+                  <hr>
                   <div class="countRun">Количество ходов: <p>0</p></div>
                   <hr>
                   <div class="countElements">Убрано пар цифр: <p>0</p></div>
                   <hr>
-                  <div class="firstClick">Позиция первого клика: <p>ряд 0 колонка 0</p></div>
+                  <div class="countRows">Убрано рядов: <p>0</p></div>
                   <hr>
+                  <h5>Позиции последних кликов:</h5>
+                  <div class="firstClick">Позиция первого клика: <p>ряд 0 колонка 0</p></div>
                   <div class="secondClick">Позиция второго клика: <p>ряд 0 колонка 0</p></div>
                 </div>
               </div>
             </div>
           </div>
 
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">   </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <div class="modal-body">
+                  <div class="wrap-regulations">
+                    <h2>Цель игры:</h2><p>Убать все цифры с поля.</p>
+                    <h2>Правила игры:</h2><p>Цифры убираются с поля парами если они дают в сумме 10 либо они одинаковые.</p>
+                    <p>Убрать можно рядом стоящие цифры по горизонтале и вертикали.</p>
+                    <p><strong>В лёгком режиме игры:</strong> Возможно убрать последнию цифру в ряде, с первой цифрой в <strong>любом</strong>
+                      другом ряде и первую цифру в ряде с поледней цифрой в <strong>любом</strong> другом ряде.<p>
+                    <p><strong>В сложно режиме игры:</strong> Возможно убрать последнию цифру в ряде, с первой цифрой в <strong>следующем</strong> ряде.<p>
+                    <hr>
+                    <p>Визуальный примеры как можно убирать цифры:</p>
+                    <h4>Убираем последнию цифру и первую цифру.</h4>
+                    <div class="playing-field">
+                      <div class="gaming-row">
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage example">9</div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage example">1</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">1</div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">9</div>
+                      </div>
+                    </div>
+
+                    <h4>Убираем цифры по вертикали</h4>
+                    <div class="playing-field">
+                      <div class="gaming-row">
+                        <div class="gaming-cage example">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">9</div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage example">1</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage example">1</div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage example">9</div>
+                      </div>
+                    </div>
+
+                    <h4>убираем цифры по горизонтале</h4>
+                    <div class="playing-field">
+                      <div class="gaming-row">
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">9</div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage example">1</div>
+                        <div class="gaming-cage example">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">1</div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">9</div>
+                      </div>
+                    </div>
+                    <hr>
+
+                    <p>Когда цифры убраны после них остаются пустые поля, они не учитываются при дальнейшем подсчёте позиций.</p>
+                    <h4>Пример: в данном случае можно убарть из первого ряда 8 и со второго ряда 2</h4>
+                    <div class="playing-field">
+                      <div class="gaming-row">
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage example">8</div>
+                        <div class="gaming-cage example-null"></div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example">2</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">1</div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">9</div>
+                      </div>
+                    </div>
+
+                    <hr>
+                    <p>"Следующий ход" добавляет к игровому полю все оставшееся цифры на поле без пустых полей.</p>
+                    <h5>Пример: после первого раунда у нас следующие игровое поле</h5>
+                    <div class="playing-field">
+                      <div class="gaming-row">
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage example-null"></div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage example-null"></div>
+                      </div>
+                    </div>
+
+                    <p>После нажатия кнопки, получаем следующие игровое поле</p>
+                    <div class="playing-field">
+                      <div class="gaming-row">
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage example-null"></div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage example-null"></div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage example-null"></div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">2</div>
+                        <div class="gaming-cage">3</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">3</div>
+                      </div>
+                      <div class="gaming-row">
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">4</div>
+                        <div class="gaming-cage">5</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">6</div>
+                        <div class="gaming-cage">1</div>
+                        <div class="gaming-cage">7</div>
+                        <div class="gaming-cage">8</div>
+                        <div class="gaming-cage">1</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
+  </div>
 
-    <section id="s-body">
-    </section>
-
-    <section id="s-footer">
-    </section>
-
-	</div>
- 
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
+
+  <link rel="stylesheet" href="css/main.min.css">
+  <script src="js/scripts.min.js"></script>
 
 </body>
 </html>
