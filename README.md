@@ -1,7 +1,7 @@
 # Мои проекты 
 
 # Javascript
-* [Матриц чисел](https://shapovalenkod.github.io/Game-numbers-in-the-matrix/) - Игра написаня с нуля (от идеи до реализации)   [репозиторий](https://github.com/ShapovalenkoD/Game-numbers-in-the-matrix) версия beta 1.1
+* [Матриц чисел](https://shapovalenkod.github.io/Game-numbers-in-the-matrix/) - Игра написана с нуля (от идеи до реализации)   [репозиторий](https://github.com/ShapovalenkoD/Game-numbers-in-the-matrix)
 * [Hardware-failure](https://shapovalenkod.github.io/Hardware-failure/) - тестовый калькулятор, с описаниям задачи.
 
 # Вёрстки
