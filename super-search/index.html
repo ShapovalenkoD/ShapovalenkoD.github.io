@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Суперпоисковая cтрока</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+</head>
+
+<body>
+
+	<div id="my-page">
+		
+		<section id="s-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h1>«Суперпоисковая Строка»</h1>
+					</div>
+					<div class="col-12">
+						<button id="btn-regulations" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+							Техническое задание
+						</button>
+						<p>Задержка на ввод в 250 миллисекунд</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="s-body">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-12">
+						<h3>col-12</h3>
+						<div class="super-search-line">
+							<div class="wrap-input">
+								<input id="search-first" text='qwe ' class="input search-input" type="text" placeholder="input any text...">
+								<div class="promts">
+									<div class="promt-text"><a href="#"><p></p> in <span>Phrase Overview</span></a></div>
+									<div class="promt-text"><a href="#"><p></p> in <span>Domain Overview</span></a></div>
+									<div class="promt-text"><a href="#"><p></p> in <span>URL Overview</span></a></div>
+								</div>
+							</div>
+							<div class="wrap-button">
+								<button class="close">&#10006;</button>
+								<button class="btn btn-main button-search" disabled>Search</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-9">
+						<h3>col-9</h3>
+						<div class="super-search-line">
+							<div class="wrap-input">
+								<input id="search-second" class="input search-input" type="text" placeholder="input any text...">
+								<div class="promts">
+									<div class="promt-text"><a href="#"><p></p> in <span>Phrase Overview</span></a></div>
+									<div class="promt-text"><a href="#"><p></p> in <span>Domain Overview</span></a></div>
+									<div class="promt-text"><a href="#"><p></p> in <span>URL Overview</span></a></div>
+								</div>
+							</div>
+							<div class="wrap-button">
+								<button class="close">&#10006;</button>
+								<button class="btn btn-main button-search" disabled>Search</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6">
+						<h3>col-6</h3>
+						<div class="super-search-line">
+							<div class="wrap-input">
+								<input id="search-third" class="input search-input" type="text" placeholder="input any text...">
+								<div class="promts">
+									<div class="promt-text"><a href="#"><p></p> in <span>Phrase Overview</span></a></div>
+									<div class="promt-text"><a href="#"><p></p> in <span>Domain Overview</span></a></div>
+									<div class="promt-text"><a href="#"><p></p> in <span>URL Overview</span></a></div>
+								</div>
+							</div>
+							<div class="wrap-button">
+								<button class="close">&#10006;</button>
+								<button class="btn btn-main button-search" disabled>Search</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLongTitle">Техническое задание</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+
+					<div class="modal-body">
+						<h3>Поле текстового ввода</h3>
+						<p>В поле можно напечатать или вставить любой текст. Если введён хотя бы один
+							символ, в правой части поля появляется кнопка ×, при нажатии на которую
+							введённый текст очищается.</p>
+						<h3>Кнопка «Search»</h3>
+						<p>При нажатии отправляется POST-запрос на адрес super-analytics.com, в запросе
+							должны присутствовать идентификатор формы и поле query , содержащее
+							введённый текст. Если поле ввода пустое, то пользователь не имеет возможности
+							нажать на кнопку.</p>
+						<h3>Выпадашка с подсказками</h3>
+						<p>Если введённый текст является URL, то
+							ниже поля ввода показывается выпадашка с ссылками-подсказками для
+							дальнейшего перехода. Первая подсказка отображает введённый URL в
+							неизменном виде, вторая — только имя хоста, третья — URL без указания
+							протокола.</p>
+						<p>Подсказка является ссылкой для перехода к результатам поиска по
+							предложенному результату; атрибут href состоит из адреса super-analytics.com,
+							и набора параметров: идентификатора типа подсказки suggestionType и значения
+							запроса query c таким же значением, что и текст подсказки.</p>
+						<p>Поясняющий текст приклеивается к концу текста подсказки, а если текст
+							подсказки слишком длинный, то лишние символыскрываются и окончание
+							строки маскируется градиентом к текущему цвету фона;
+							поясняющий текст при этом залипает у правого края выпадашки</p>
+						<p><strong>Дополнительно:</strong> разместите на странице несколько Суперпоисковых Строк в
+							контейнерах разной ширины. Каждая строка должна функционировать независимо
+							от других.</p>
+						<p><strong>Дополнительно:</strong> сделайте так, чтобы при очень быстром вводе текста
+							регистрировалось только одно событие ввода каждые 250 миллисекунд.</p>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
