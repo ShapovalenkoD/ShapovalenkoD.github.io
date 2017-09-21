@@ -2,6 +2,7 @@
 
 # Javascript
 * [Матриц чисел](https://shapovalenkod.github.io/Game-numbers-in-the-matrix/) - Игра написана с нуля (от идеи до реализации)   [репозиторий](https://github.com/ShapovalenkoD/Game-numbers-in-the-matrix)
+* [Суперпоисковая Строка](https://shapovalenkod.github.io/super-search/index.html) - поисковая строка, ТЗ внутри, [репозиторий](https://github.com/ShapovalenkoD/super-search) 
 * [Hardware-failure](https://shapovalenkod.github.io/Hardware-failure/) - тестовый калькулятор, с описаниям задачи.
 
 # Вёрстки
