@@ -3,7 +3,7 @@
 # Javascript
 * [Матриц чисел](https://shapovalenkod.github.io/Game-numbers-in-the-matrix/) - Игра написана с нуля (от идеи до реализации)   [репозиторий](https://github.com/ShapovalenkoD/Game-numbers-in-the-matrix)
 * [Суперпоисковая Строка](https://shapovalenkod.github.io/super-search/index.html) - поисковая строка, ТЗ внутри, [репозиторий](https://github.com/ShapovalenkoD/super-search) 
-* [ВК авторизация](https://shapovalenkod.github.io/five-friends/) - авторизация в вк (черзе SDK) и показ 5 случайных друзей
+* [ВК авторизация](https://shapovalenkod.github.io/five-friends/) - авторизация в вк (черзе SDK) и показ 5 случайных друзей [репозиторий](https://github.com/ShapovalenkoD/ShapovalenkoD.github.io/tree/master/five-friends)
 * [Hardware-failure](https://shapovalenkod.github.io/Hardware-failure/) - тестовый калькулятор, с описаниям задачи.
 
 # Вёрстки
