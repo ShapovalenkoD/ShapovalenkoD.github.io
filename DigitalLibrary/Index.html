@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zebra_datepicker/dist/css/default/zebra_datepicker.min.css">
+	<link rel="stylesheet " href="style.css">
+	<script
+			src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			crossorigin="anonymous"></script>
+	<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+			integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+			crossorigin="anonymous"></script>
+	<script
+			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+			integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+			crossorigin="anonymous"></script>
+	<script data-require="MomentJS@2.10.0" data-semver="2.10.0" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/zebra_datepicker/dist/zebra_datepicker.min.js"></script>
+	<script src="index.js"></script>
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-5">
+				<div class="form-wrap">
+					<div class="form-group">
+						<label for="input-name-book" class="col-form-label">Назавние книги</label>
+						<input id="input-name-book" class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<span class="Zebra_DatePicker_Icon_Wrapper">
+							<label for="input-data-edition" class="col-form-label">Дата издание</label>
+							<input id="input-data-edition" type="text" class="form-control" data-zdp_readonly_element="false">
+						</span>
+					</div>
+					<div class="form-group">
+						<label for="input-author-book" class="col-form-label">Автор книги</label>
+						<input id="input-author-book" class="form-control" type="text">
+					</div>
+					<div class="form-group">
+						<label for="input-pages-numbers" class="col-form-label">Количество страниц</label>
+						<input id="input-pages-numbers" class="form-control" type="text">
+					</div>
+					<button type="button" id="save-form-btn" class="btn btn-success">Сохранить</button>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-md-7">
+
+				<div class="col-12">
+					<div class="container">
+						<div class="row">
+							<div class="sort-wrap">
+								<h5>Сортировка</h5>
+								<div class="form-check form-check-inline">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="alphabetSort" value="option1"> По автору.
+									</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="dataEditionSort" value="option2"> По дате издания.
+									</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<label class="form-check-label">
+										<input class="form-check-input" type="radio" name="inlineRadioOptions" id="noySort" value="option3"> Без сортировки.
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="collection-books">
+					<div class="container">
+						<div class="row">
+
+							<div class="col-12 col-xl-6">
+								<div class="book-wrap" id="book-id-1">
+									<div class="text-wrap">
+										<span class="name-book"><p>Мистер кискис</p></span>
+										<span class="author-book"><h6>Автор книги:</h6><p>Арни Шварц</p></span>
+									</div>
+									<div class="buttom-wrap">
+										<button type="button" class="btn btn-info editing">Редактирование</button>
+										<button type="button" class="btn btn-secondary delete" data-toggle="modal" data-target="#exampleModal">Удаление</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-xl-6">
+								<div class="book-wrap" id="book-id-2">
+									<div class="text-wrap">
+										<span class="name-book"><p>Путешествие чужого</p></span>
+										<span class="author-book"><h6>Автор книги:</h6><p>Эллен Пипли</p></span>
+									</div>
+									<div class="buttom-wrap">
+										<button type="button" class="btn btn-info editing">Редактирование</button>
+										<button type="button" class="btn btn-secondary delete" data-toggle="modal" data-target="#exampleModal">Удаление</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-12 col-xl-6">
+								<div class="book-wrap" id="book-id-3">
+									<div class="text-wrap">
+										<span class="name-book"><p>Рейнджеры</p></span>
+										<span class="author-book"><h6>Автор книги:</h6><p>Кач Оррис</p></span>
+									</div>
+									<div class="buttom-wrap">
+										<button type="button" class="btn btn-info editing">Редактирование</button>
+										<button type="button" class="btn btn-secondary delete" data-toggle="modal" data-target="#exampleModal">Удаление</button>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Удаление книги из библиотеки.</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+					<button type="button" class="btn btn-primary delete-modal" data-dismiss="modal">Удалить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

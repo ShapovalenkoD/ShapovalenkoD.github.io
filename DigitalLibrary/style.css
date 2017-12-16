@@ -1,0 +1,102 @@
+.testq {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: greenyellow;
+	margin: 10px;
+}
+
+.form-wrap {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	margin: 10px;
+	padding: 10px;
+}
+
+.book-wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	margin: 10px;
+	padding: 10px;
+	transition: background 1s;
+}
+
+.book-wrap:hover {
+	background: #f8f9fa;
+}
+.book-wrap:hover .buttom-wrap {
+	visibility: visible;
+}
+
+.text-wrap {
+	display: flex;
+	flex-direction: column;
+}
+
+.buttom-wrap {
+	display: flex;
+	margin: 15px 5px 5px;
+	justify-content: center;
+	visibility: hidden;
+}
+
+.btn {
+	cursor: pointer;
+}
+
+.editing {
+	margin-right: 10px;
+}
+
+.form-wrap .btn-success {
+	align-self: center;
+}
+
+.name-book, .author-book {
+	display: flex;
+}
+
+h6, p {
+	margin: 0px;
+	line-height: 1.2;
+}
+
+.author-book > p {
+	margin-left: 10px;
+}
+
+.Zebra_DatePicker_Icon_Wrapper {
+	width: auto !important;
+}
+
+button.Zebra_DatePicker_Icon.Zebra_DatePicker_Icon_Inside_Right {
+	margin-right: 10px;
+}
+
+.sort-wrap {
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	margin: 10px;
+	padding: 10px;
+}
+
+.form-check-label {
+	line-height: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
