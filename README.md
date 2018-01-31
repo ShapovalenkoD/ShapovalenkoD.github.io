@@ -1,5 +1,8 @@
 # Мои проекты 
 
+# React
+* [Пиццы](https://github.com/ShapovalenkoD/TestReactPizza) - ссылка на репозиторий
+
 # Javascript
 * [Игра на Pixijs](https://github.com/ShapovalenkoD/PixiGame) - ссылка на репозиторий -  client + server (express), игровое поле с анимацией и звуком по клику, новые номера получаются с сервера, масштарбируется: в index.js поставить numberOfFiled нужное значение
 * [Электронная библиотека](https://shapovalenkod.github.io/DigitalLibrary/Index.html) - JQueary, localStorage, добавление, редактирование, удаление, сортировка и книг, валидация даты и количество страниц. [репозиторий](https://github.com/ShapovalenkoD/ShapovalenkoD.github.io/tree/master/DigitalLibrary)
