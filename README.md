@@ -1,7 +1,8 @@
 # Мои проекты 
 
 # React
-* [Пиццы](https://github.com/ShapovalenkoD/TestReactPizza) - ссылка на репозиторий
+* [Фото студия](https://github.com/ShapovalenkoD/devjsTest) - ссылка на репозиторий, react + redux     
+* [Пиццы](https://github.com/ShapovalenkoD/TestReactPizza) - ссылка на репозиторий    
 
 # Javascript
 * [Игра на Pixijs](https://github.com/ShapovalenkoD/PixiGame) - ссылка на репозиторий -  client + server (express), игровое поле с анимацией и звуком по клику, новые номера получаются с сервера, масштарбируется: в index.js поставить numberOfFiled нужное значение
