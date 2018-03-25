@@ -1,7 +1,7 @@
 # Мои проекты 
 
 # React
-* [Github-issues-api](https://shapovalenkod.github.io/) - react/desux, одностраничное приложение для просмотра issues с выбраного репозитория на Github. [ссылка на репозиторий](https://github.com/ShapovalenkoD/Github-issues-api)
+* [Github-issues-api](https://shapovalenkod.github.io/Github-issues-api) - react/dedux, одностраничное приложение для просмотра issues с выбраного репозитория на Github. [ссылка на репозиторий](https://github.com/ShapovalenkoD/Github-issues-api)
 * [Фото студия](https://github.com/ShapovalenkoD/devjsTest) - ссылка на репозиторий, react + redux     
 * [Пиццы](https://github.com/ShapovalenkoD/TestReactPizza) - ссылка на репозиторий    
 
