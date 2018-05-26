@@ -1,6 +1,7 @@
 # Мои проекты 
 
 # React
+* [example-page-api](https://shapovalenkod.github.io/example-page-api) - react/react-router 4/styled component [ссылка на репозиторий](https://github.com/ShapovalenkoD/example-page-api)
 * [Github-issues-api](https://shapovalenkod.github.io/Github-issues-api) - react/redux, одностраничное приложение для просмотра issues с выбраного репозитория на Github. [ссылка на репозиторий](https://github.com/ShapovalenkoD/Github-issues-api)
 * [Фото студия](https://github.com/ShapovalenkoD/devjsTest) - ссылка на репозиторий, react + redux     
 * [Пиццы](https://github.com/ShapovalenkoD/TestReactPizza) - ссылка на репозиторий    
