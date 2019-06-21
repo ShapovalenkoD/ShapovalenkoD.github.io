@@ -1,22 +1,17 @@
 # Мои проекты 
 
 # React
-* [table-example-react](https://shapovalenkod.github.io/table-example-react) - [ссылка на репозиторий](https://github.com/ShapovalenkoD/table-example-react)
-* [example-page-api](https://shapovalenkod.github.io/example-page-api) - react/react-router 4/styled component [ссылка на репозиторий](https://github.com/ShapovalenkoD/example-page-api)
-* [Github-issues-api](https://shapovalenkod.github.io/Github-issues-api) - react/redux, одностраничное приложение для просмотра issues с выбраного репозитория на Github. [ссылка на репозиторий](https://github.com/ShapovalenkoD/Github-issues-api)
-* [Фото студия](https://github.com/ShapovalenkoD/devjsTest) - ссылка на репозиторий, react + redux     
-* [Пиццы](https://github.com/ShapovalenkoD/TestReactPizza) - ссылка на репозиторий    
+* [table-example-react](https://shapovalenkod.github.io/table-example-react)
+* [example-page-api](https://shapovalenkod.github.io/example-page-api) - react/react-router 4/styled component 
+* [Github-issues-api](https://shapovalenkod.github.io/Github-issues-api) - react/redux, одностраничное приложение для просмотра issues с выбраного репозитория на Github. 
 
 # Javascript
-* [Игра на Pixijs](https://github.com/ShapovalenkoD/PixiGame) - ссылка на репозиторий -  client + server (express), игровое поле с анимацией и звуком по клику, новые номера получаются с сервера, масштарбируется: в index.js поставить numberOfFiled нужное значение
-* [Электронная библиотека](https://shapovalenkod.github.io/DigitalLibrary/Index.html) - JQueary, localStorage, добавление, редактирование, удаление, сортировка и книг, валидация даты и количество страниц. [репозиторий](https://github.com/ShapovalenkoD/ShapovalenkoD.github.io/tree/master/DigitalLibrary)
-* [Суперпоисковая Строка](https://shapovalenkod.github.io/super-search/index.html) - поисковая строка, ТЗ внутри, [репозиторий](https://github.com/ShapovalenkoD/super-search) 
-* [ВК авторизация](https://shapovalenkod.github.io/five-friends/) - авторизация в вк (черзе SDK) и показ 5 случайных друзей [репозиторий](https://github.com/ShapovalenkoD/ShapovalenkoD.github.io/tree/master/five-friends)
-* [Матриц чисел](https://shapovalenkod.github.io/Game-numbers-in-the-matrix/) - мини игра [репозиторий](https://github.com/ShapovalenkoD/Game-numbers-in-the-matrix)
+* [Электронная библиотека](https://shapovalenkod.github.io/DigitalLibrary/Index.html) - JQueary, localStorage, добавление, редактирование, удаление, сортировка и книг, валидация даты и количество страниц.
+* [Суперпоисковая Строка](https://shapovalenkod.github.io/super-search/index.html) - поисковая строка, ТЗ внутри
+* [ВК авторизация](https://shapovalenkod.github.io/five-friends/) - авторизация в вк (черзе SDK) и показ 5 случайных друзей
+* [Матриц чисел](https://shapovalenkod.github.io/Game-numbers-in-the-matrix/) - мини игра 
 * [Hardware-failure](https://shapovalenkod.github.io/Hardware-failure/) - тестовый калькулятор, с описаниям задачи.
 
-# Node js 
-* [Крестики нолики](https://github.com/ShapovalenkoD/Tic-tac-toe-online-game) - ссылка на репозиторий - Nodejs, socket.io, JQueary - онлайн крестили нолики с чатом в комнатах по 2 человека.
 
 # Вёрстки
 * [Сss grid](https://shapovalenkod.github.io/css-grid/index.html) - css grid
