@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/focloud/static/css/main.d1981436.css",
-    "main.js": "/focloud/static/js/main.0572c8fc.js",
+    "main.js": "/focloud/static/js/main.b55b3264.js",
     "static/media/logo.svg": "/focloud/static/media/logo.4bf1359c391da74218eb07966578710a.svg",
     "static/media/background.svg": "/focloud/static/media/background.2922448fd196a80aaf3c.svg",
     "static/media/building.svg": "/focloud/static/media/building.ead753dc47ff5715fec63054e083699a.svg",
@@ -11,10 +11,10 @@
     "static/media/user.svg": "/focloud/static/media/user.c8a42c0076228d29056df03827ef4a08.svg",
     "static/media/ruFlag.svg": "/focloud/static/media/ruFlag.677003a101db0aa247346aba99e928a7.svg",
     "main.d1981436.css.map": "/focloud/static/css/main.d1981436.css.map",
-    "main.0572c8fc.js.map": "/focloud/static/js/main.0572c8fc.js.map"
+    "main.b55b3264.js.map": "/focloud/static/js/main.b55b3264.js.map"
   },
   "entrypoints": [
     "static/css/main.d1981436.css",
-    "static/js/main.0572c8fc.js"
+    "static/js/main.b55b3264.js"
   ]
 }
