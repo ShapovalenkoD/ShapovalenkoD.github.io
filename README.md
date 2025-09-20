@@ -6,6 +6,7 @@
 - [example-page-api](https://shapovalenkod.github.io/example-page-api) - react/react-router 4/styled component
 - [Github-issues-api](https://shapovalenkod.github.io/Github-issues-api) - react/redux, одностраничное приложение для просмотра issues с выбраного репозитория на Github.
 - [focloud](https://shapovalenkod.github.io/focloud)
+- [decimal](https://shapovalenkod.github.io/decimal) - decimal.js - 2 decimal inputs
 
 # Javascript
 
